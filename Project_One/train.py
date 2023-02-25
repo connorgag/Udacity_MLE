@@ -21,7 +21,7 @@ def clean_data(data):
     x_df.drop("job", inplace=True, axis=1)
     x_df = x_df.join(jobs)
     x_df["marital"] = x_df.marital.apply(lambda s: 1 if s == "married" else 0)
-    x_df["default"] = x_df.default.apply(lambda s: 1 if s == "yes" else 0)
+    # x_df["default"] = x_df.default.apply(lambda s: 1 if s == "yes" else 0)
     x_df["housing"] = x_df.housing.apply(lambda s: 1 if s == "yes" else 0)
     x_df["loan"] = x_df.loan.apply(lambda s: 1 if s == "yes" else 0)
     contact = pd.get_dummies(x_df.contact, prefix="contact")
@@ -55,14 +55,18 @@ def main():
     # Data is located at:
     # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
-    ds = ### YOUR CODE HERE ###
+    ### YOUR CODE HERE ###
+    ds = pd.read_csv("https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv")
     
     x, y = clean_data(ds)
 
     # TODO: Split data into train and test sets.
-
     ### YOUR CODE HERE ###a
-
+    x_train, x_test, y_train, y_test = train_test_split(x,y,
+                                   random_state=60, 
+                                   test_size=0.25, 
+                                   shuffle=True)
+        
     model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
 
     accuracy = model.score(x_test, y_test)
