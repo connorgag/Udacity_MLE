@@ -64,7 +64,6 @@ def main():
     x, y = clean_data(ds)
 
     # TODO: Split data into train and test sets.
-    ### YOUR CODE HERE ###a
     x_train, x_test, y_train, y_test = train_test_split(x,y,
                                    random_state=60, 
                                    test_size=0.25, 
@@ -73,7 +72,6 @@ def main():
     model = LogisticRegression(C=c, max_iter=max_iter).fit(x_train, y_train)
 
     accuracy = model.score(x_test, y_test)
-    run.log("Accuracy", np.float(accuracy))
 
 if __name__ == '__main__':
     main()
