@@ -21,7 +21,7 @@ def clean_data(data):
     x_df.drop("job", inplace=True, axis=1)
     x_df = x_df.join(jobs)
     x_df["marital"] = x_df.marital.apply(lambda s: 1 if s == "married" else 0)
-    # x_df["default"] = x_df.default.apply(lambda s: 1 if s == "yes" else 0)
+    x_df["default"] = x_df.default.apply(lambda s: 1 if s == "yes" else 0)
     x_df["housing"] = x_df.housing.apply(lambda s: 1 if s == "yes" else 0)
     x_df["loan"] = x_df.loan.apply(lambda s: 1 if s == "yes" else 0)
     contact = pd.get_dummies(x_df.contact, prefix="contact")
@@ -39,25 +39,28 @@ def clean_data(data):
 
 def main():
     # Add arguments to script
-    parser = argparse.ArgumentParser()
+    # parser = argparse.ArgumentParser()
 
-    parser.add_argument('--C', type=float, default=1.0, help="Inverse of regularization strength. Smaller values cause stronger regularization")
-    parser.add_argument('--max_iter', type=int, default=100, help="Maximum number of iterations to converge")
+    # parser.add_argument('--c', type=float, dest='c', default=1.0, help="Inverse of regularization strength. Smaller values cause stronger regularization")
+    # parser.add_argument('--max_iter', type=int, dest='max_iter', default=100, help="Maximum number of iterations to converge")
 
-    args = parser.parse_args()
+    # args = parser.parse_args()
 
     run = Run.get_context()
-
-    run.log("Regularization Strength:", np.float(args.C))
-    run.log("Max iterations:", np.int(args.max_iter))
+    
+    c = 1.0
+    max_iter = 100
+    
+    run.log("Regularization Strength:", np.float(c))
+    run.log("Max iterations:", np.int(max_iter))
 
     # TODO: Create TabularDataset using TabularDatasetFactory
     # Data is located at:
     # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
     ### YOUR CODE HERE ###
-    ds = pd.read_csv("https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv")
-    
+    ds = TabularDatasetFactory().from_delimited_files("https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv")
+
     x, y = clean_data(ds)
 
     # TODO: Split data into train and test sets.
@@ -67,7 +70,7 @@ def main():
                                    test_size=0.25, 
                                    shuffle=True)
         
-    model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
+    model = LogisticRegression(C=c, max_iter=max_iter).fit(x_train, y_train)
 
     accuracy = model.score(x_test, y_test)
     run.log("Accuracy", np.float(accuracy))
