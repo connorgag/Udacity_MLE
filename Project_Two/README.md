@@ -41,7 +41,7 @@ In this project, I learned how to deploy many of the parts of a machine learning
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Benchmark_Screenshot_2.png?raw=true)
 
-7. Create Pipeline
+7. Create Pipeline using Python SDK
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/RunDetails_Screenshot.png?raw=true)
 
