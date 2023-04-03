@@ -1,5 +1,6 @@
 # Project 2: Operationalizing Machine Learning
-## By Connor Gag
+
+By Connor Gag
 
 ## Overview
 In this project, I learned how to deploy many of the parts of a machine learning pipeline in Azure ML. I learned how to create each of these parts by using the Azure UI as well as by using the python SDK. These steps include creating the AutoML, deploying it, and understanding and consuming the endpoint.
