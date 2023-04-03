@@ -13,15 +13,21 @@ In this project, I learned how to deploy many of the parts of a machine learning
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/bank_dataset_screenshot.png?raw=true)
 
+
+
 2. Run the dataset through AutoML
    
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Completed_Screenshot.png?raw=true)
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Bank_and_AutoML_Screenshot.png?raw=true)
 
+
+
 3. Choose the best option
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Best_Model_Screenshot.png?raw=true)
+
+
 
 4. Deploy the best option and enable application insights, then view the logs
 
@@ -29,17 +35,23 @@ In this project, I learned how to deploy many of the parts of a machine learning
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/logs_py_output_screenshot.png?raw=true)
 
+
+
 5. Understand API Endpoint using Swagger
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Swagger_Screenshot.png?raw=true)
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Swagger_Screenshot_2.png?raw=true)
 
+
+
 6. Set Benchmarks 
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Benchmark_Screenshot_1.png?raw=true)
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Benchmark_Screenshot_2.png?raw=true)
+
+
 
 7. Create Pipeline using Python SDK
 
@@ -51,9 +63,13 @@ In this project, I learned how to deploy many of the parts of a machine learning
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Published_Pipeline_Overview_Screenshot.png?raw=true)
 
+
+
 8. Schedule the Run
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Scheduled_Run_Screenshot.png?raw=true)
+
+
 
 9. Consume Endpoints
 
@@ -63,3 +79,6 @@ In this project, I learned how to deploy many of the parts of a machine learning
 
 ## Screen Recording
 https://youtu.be/mNSjadBRQUM
+
+## Future Improvements
+There are many things you could do to improve this project. For example, you could switch from AutoML to Hyperdrive and do some hyperparameter tuning, which may result in a better model if you have a good understanding of the domain. Another option would be to collect more data, which may make future predictions more accurate. 
