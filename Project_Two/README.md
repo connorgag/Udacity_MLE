@@ -61,6 +61,5 @@ In this project, I learned how to deploy many of the parts of a machine learning
 
 
 
-
 ## Screen Recording
 https://youtu.be/mNSjadBRQUM
