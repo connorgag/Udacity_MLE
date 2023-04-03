@@ -23,7 +23,7 @@ In this project, I learned how to deploy many of the parts of a machine learning
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Best_Model_Screenshot.png?raw=true)
 
-4. Enable application insights
+4. Deploy the best option and enable application insights
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/App_Insights_Screenshot.png?raw=true)
 
