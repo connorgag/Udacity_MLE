@@ -95,7 +95,7 @@ This is a completed view of our pipeline under "Jobs". As you can see, it comple
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Completed_Pipeline_Screenshot.png?raw=true)
 
 
-This is ML studio showing the pipeline endpoint as Active. Under the "Pipelines" section, we can look at the "Published Pipelines Overview" to see that the pipeline has a status of Active and has an available REST endpoint, which we will use to consume the model. 
+**This is ML studio showing the pipeline endpoint as Active. Under the "Pipelines" section, we can look at the "Published Pipelines Overview" to see that the pipeline has a status of Active and has an available REST endpoint, which we will use to consume the model.**
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Published_Pipeline_Overview_Screenshot.png?raw=true)
 
