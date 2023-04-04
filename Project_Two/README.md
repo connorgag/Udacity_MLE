@@ -17,6 +17,7 @@ Here we uploaded the bank marketing dataset. With Azure you can view the feature
 
 
 
+
 2. Run the dataset through AutoML
    
 Here is our AutoML result under the "Jobs" section. You can see that it took about 20 minutes to run. Before running this we created a compute cluster called "project-2-compute". AutoML is important because it tests out many algorithms on our data and ranks them all based on the primary metric that we decide. 
@@ -25,11 +26,13 @@ Here is our AutoML result under the "Jobs" section. You can see that it took abo
 
 
 
+
 3. Choose the best option
 
 Now that we have run our dataset through the AutoML supplied by Azure, we can now view the results. In our case, we chose our primary metric as AUC weighted, so I ranked the algorithms based on this. Then, I chose the top one, which had an AUC Weighted about about .95. We will work with this algorithm in the next steps. 
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Best_Model_Screenshot.png?raw=true)
+
 
 
 
@@ -46,6 +49,7 @@ Running log.py gives us log output from our deployed model, allowing us to monit
 
 
 
+
 5. Understand API Endpoint using Swagger
 
 Here I downloaded the Swagger json file from the model deployment section of Azure ML. Then I started a python server on port 8000 and opened it to view the API specifications. 
@@ -59,6 +63,7 @@ Going into a little more detail, here we can see the specific HTTP requests that
 
 
 
+
 6. Set Benchmarks 
 
 We are running benchmark.sh, which tells us how our endpoint is doing when it comes to responding to our requests. This is important so that we have a benchmark that will help us detect anomalies in the future. 
@@ -69,6 +74,7 @@ We are running benchmark.sh, which tells us how our endpoint is doing when it co
 Going deeper into our results, we can view the time it took for the connections, the number of successful requests, the time per request, etc. For example, here each request took 414 milliseconds. 
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Benchmark_Screenshot_2.png?raw=true)
+
 
 
 
@@ -100,7 +106,8 @@ Looking into this pipeline run further, we can view all of the steps. In this ca
 
 
 
-1. Schedule the Run
+
+8. Schedule the Run
 
 Under "Jobs", we can schedule the pipeline to run at whatever pattern we like. I arbitrarily chose every Monday through Friday at 10:00 PM (UTC), but you can change this based on your own situation and needs. This automation is helpful because it takes out the manual work associated with running a pipeline. 
 
@@ -112,6 +119,7 @@ Under "Jobs", we can schedule the pipeline to run at whatever pattern we like. I
 Here I ran endpoint.py and received the JSON payload as output. We can interpret this by saying that the first example we gave has a predicted value of "yes" and the second example we gave has a predicted value of "no". 
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/endpoint_output.png?raw=true)
+
 
 
 
