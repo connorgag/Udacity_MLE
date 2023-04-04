@@ -21,7 +21,7 @@ Here we uploaded the bank marketing dataset. With Azure you can view the feature
    
 Here is our AutoML result under the "Jobs" section. You can see that it took about 20 minutes to run. Before running this we created a compute cluster called "project-2-compute". AutoML is important because it tests out many algorithms on our data and ranks them all based on the primary metric that we decide. 
 
-![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Bank_and_AutoML_Screenshot.png?raw=true)
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Completed_Screenshot.png?raw=true)
 
 
 
@@ -91,12 +91,12 @@ This is a completed view of our pipeline under "Jobs". As you can see, it comple
 
 Under the "Pipelines" section, we can look at the "Published Pipelines Overview" to see that the pipeline has a status of Active and has an available REST endpoint, which we will use to consume the model. 
 
-![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Completed_Screenshot.png?raw=true)
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Published_Pipeline_Overview_Screenshot.png?raw=true)
 
 
 Looking into this pipeline run further, we can view all of the steps. In this case there are two steps: One to upload the bank marketing dataset and one to run it through our chose AutoML algorithm. It is important to be able to view the pipeline so that we can understand it and make changes in the future. 
 
-![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Published_Pipeline_Overview_Screenshot.png?raw=true)
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Bank_and_AutoML_Screenshot.png?raw=true)
 
 
 
