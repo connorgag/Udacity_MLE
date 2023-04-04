@@ -89,18 +89,18 @@ This is a completed view of our pipeline under "Jobs". As you can see, it comple
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Completed_Pipeline_Screenshot.png?raw=true)
 
 
-Under the "Pipelines" section, we can look at the "Published Pipelines Overview" to see that the pipeline has a status of Active and has an available REST endpoint, which we will use to consume the model. 
+This is ML studio showing the pipeline endpoint as Active. Under the "Pipelines" section, we can look at the "Published Pipelines Overview" to see that the pipeline has a status of Active and has an available REST endpoint, which we will use to consume the model. 
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Published_Pipeline_Overview_Screenshot.png?raw=true)
 
 
-Looking into this pipeline run further, we can view all of the steps. In this case there are two steps: One to upload the bank marketing dataset and one to run it through our chose AutoML algorithm. It is important to be able to view the pipeline so that we can understand it and make changes in the future. 
+Looking into this pipeline run further, we can view all of the steps. In this case there are two steps: One to upload the bank marketing dataset and one to run it through our chosen AutoML model. It is important to be able to view the pipeline so that we can understand it and make changes in the future. 
 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Two/Screenshots/Bank_and_AutoML_Screenshot.png?raw=true)
 
 
 
-8. Schedule the Run
+1. Schedule the Run
 
 Under "Jobs", we can schedule the pipeline to run at whatever pattern we like. I arbitrarily chose every Monday through Friday at 10:00 PM (UTC), but you can change this based on your own situation and needs. This automation is helpful because it takes out the manual work associated with running a pipeline. 
 
