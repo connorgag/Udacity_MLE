@@ -1,8 +1,14 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
-# Your Project Title Here
+# General Health Predictions Based on Survey Data
 
 *TODO:* Write a short introduction to your project.
+
+This project predicts an individual's general health by using data that the individual provided. This survey was part of the Behavioral Risk Factor Surveillance System by the Center for Disease Control and Prevention. According to the dataset on Kaggle, "factors assessed by the BRFSS include tobacco use, health care coverage, HIV/AIDS knowledge or prevention,
+physical activity, and fruit and vegetable consumption. Data are collected from a random sample of adults (one per
+household) through a telephone survey." 
+
+More information on the data can be found on Kagge at https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?datasetId=2192&sortBy=voteCount
+
+
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
@@ -33,7 +39,7 @@
 ### Results
 *TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+*TODO* Remember to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
 ## Model Deployment
 *TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
