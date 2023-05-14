@@ -32,7 +32,7 @@ The dataset that I used is called Behavioral Risk Factor Surveillance System and
 
 The file I will be using is from the survey taken in 2015, which includes 330 columns. 
 
-More information on the data can be found on Kagge at https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?datasetId=2192&sortBy=voteCount
+More information on the data can be found on Kaggle at https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?datasetId=2192&sortBy=voteCount
 
 
 After the initial experiment, I removed the feature '_RLHLTH' because it turned out to be a derived feature from the target outcome. 
@@ -85,6 +85,10 @@ My AutoML settings define the regression problem with the target of GENHLTH. I i
 
 *TODO* Remember to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
+
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/AutoML_RunDetails.png?raw=true)
+
+
 ## Hyperparameter Tuning
 
 I used a neural network regression model using the MLPRegressor class. I chose a neural network because they are typically good at understanding complex relationships within the data. The dataset I chose has many columns, so a neural network made sense because it could easily work with the large number of features. Another reason I chose it was because it is easy to tune the hyperparameters in a neural network. 
@@ -130,7 +134,5 @@ This is a brief overview, for more detail into how to query the endpoint, go to 
 
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
+
+https://youtu.be/CUV1OO85_BU
