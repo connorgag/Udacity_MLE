@@ -11,6 +11,8 @@ This project predicts an individual's general health by using data that the indi
 
 1. The first step is to download the data from ttps://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?datasetId=2192&sortBy=voteCount. 
 
+If you want the best model possible, you can upload the data as is. If you are short on time (< 8 hours), you will need to take a sample of the data to upload to Azure ML. I took a sample of 150,000 of the ~ 450,000 rows. The computation time with this amount of data and the provied CPU still took around 7 hours. 
+
 
 If you want to run the AutoML, you need to upload it to AzureML in the 'Data' section. Remember to remove the column '_RLHLTH' because this is a field derived from our target field. Call the data 'behavioral_data'. 
 
@@ -85,8 +87,13 @@ My AutoML settings define the regression problem with the target of GENHLTH. I i
 
 *TODO* Remember to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
 
+The best model had a normalized root mean squared error of about .101, which used Stack Ensemble. This algorithm uses the output of many other algorithms in it's calculation. The main way I could improve this model is to use all of the data, instead of just taking a sample. I would need my own Azure account to do this because it would take so long. 
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Automl_run_details.png?raw=true)
 
-![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/AutoML_RunDetails.png?raw=true)
+
+
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/AutoML_best_run.png?raw=true)
+
 
 
 ## Hyperparameter Tuning
