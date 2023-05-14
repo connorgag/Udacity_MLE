@@ -13,6 +13,7 @@ from sklearn.neural_network import MLPRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_squared_error, r2_score
+from azureml.core import Workspace, Dataset
 
 def clean_data(df):
     numeric_cols = df.select_dtypes(exclude=['object']).columns
@@ -22,6 +23,7 @@ def clean_data(df):
     df_numeric = df_numeric.fillna(0)
     y_df = df_numeric.pop('GENHLTH')
     return df_numeric, y_df
+
 
 def main():
     # Add arguments to script
@@ -34,10 +36,16 @@ def main():
 
     run = Run.get_context()
     
+
+
     run.log("Maximum Iterations:", np.float(args.max_iter))
     run.log("Activation Function:", (args.activation))
 
-    df = pd.read_csv('behavioral_data_cleaned_sample.csv')
+    # ws = Workspace.from_config()
+    # df = Dataset.get_by_name(ws, name='behavioral_data')
+
+    df = pd.read_csv('behavioral_data.csv')
+
     x, y = clean_data(df)
 
     # TODO: Split data into train and test sets.
