@@ -1,7 +1,7 @@
 # General Health Predictions Based on Survey Data
 
 
-This project predicts an individual's general health by using data that the individual provided. This survey was part of the Behavioral Risk Factor Surveillance System by the Center for Disease Control and Prevention. In this project, I create two models, one using AutoML with Azure ML and the other using HyperDrive, which is also part of Azure ML. As you will see, the AutoML did slightly better, but took much longer to run. I deploy the AutoML and test its REST endpoint.
+This project predicts an individual's general health by using data that the individual provided. This survey was part of the Behavioral Risk Factor Surveillance System by the Center for Disease Control and Prevention. In this project, I create two models, one using AutoML with Azure ML and the other using HyperDrive, which is also part of Azure ML. As you will see, the AutoML did slightly better. I deploy the AutoML and test its REST endpoint.
 
 
 
