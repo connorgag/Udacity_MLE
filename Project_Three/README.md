@@ -1,7 +1,7 @@
 # General Health Predictions Based on Survey Data
 
 
-This project predicts an individual's general health by using data that the individual provided. This survey was part of the Behavioral Risk Factor Surveillance System by the Center for Disease Control and Prevention. In this project, I create two models, one using AutoML with Azure ML and the other using HyperDrive, which is also part of Azure ML. As you will see, the AutoML did slightly better, but took much longer to run. I deploy the AutoML and test its REST endpoint.
+This project predicts an individual's general health by using data that the individual provided. This survey was part of the Behavioral Risk Factor Surveillance System by the Center for Disease Control and Prevention. In this project, I create two models, one using AutoML with Azure ML and the other using HyperDrive, which is also part of Azure ML. As you will see, the AutoML did slightly better. I deploy the AutoML and test its REST endpoint.
 
 
 
@@ -9,7 +9,7 @@ This project predicts an individual's general health by using data that the indi
 
 
 
-1. The first step is to download the data from ttps://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?datasetId=2192&sortBy=voteCount. 
+1. The first step is to download the data from https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?datasetId=2192&sortBy=voteCount. 
 
 If you want the best model possible, you can upload the data as is. If you are short on time (< 8 hours), you will need to take a sample of the data to upload to Azure ML. I took a sample of 150,000 of the ~ 450,000 rows. The computation time with this amount of data and the provied CPU still took around 7 hours. 
 
@@ -126,7 +126,7 @@ Here is the RunDetails widget, which shows some of the runs and their metrics as
 
 
 Here is a graph of all of the Hyperdrive runs. They range from a normalized root mean squared error from .11 to .15. 
-![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Hyperdrive_graph.png?raw=true)
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Hyperdrive_run_graph.png?raw=true)
 
 
 
