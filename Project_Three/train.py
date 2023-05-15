@@ -19,6 +19,8 @@ def clean_data(df):
     numeric_cols = df.select_dtypes(exclude=['object']).columns
     # create a new dataframe with only the numeric columns
     df_numeric = df[numeric_cols]
+
+    # Remove data leakage
     df_numeric = df_numeric.drop(['_RFHLTH'], axis='columns')
     df_numeric = df_numeric.fillna(0)
     y_df = df_numeric.pop('GENHLTH')
@@ -40,9 +42,6 @@ def main():
 
     run.log("Maximum Iterations:", np.float(args.max_iter))
     run.log("Activation Function:", (args.activation))
-
-    # ws = Workspace.from_config()
-    # df = Dataset.get_by_name(ws, name='behavioral_data')
 
     df = pd.read_csv('behavioral_data.csv')
 
@@ -85,10 +84,6 @@ def main():
     os.makedirs('outputs', exist_ok=True)
     joblib.dump(model, 'outputs/model.joblib')
 
-
-    # model = LogisticRegression(C=args.C, max_iter=args.max_iter).fit(x_train, y_train)
-    # accuracy = model.score(x_test, y_test)
-    # run.log("Accuracy", np.float(accuracy))
     
 if __name__ == '__main__':
     main()
