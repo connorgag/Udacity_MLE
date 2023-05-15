@@ -9,7 +9,7 @@ This project predicts an individual's general health by using data that the indi
 
 
 
-1. The first step is to download the data from ttps://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?datasetId=2192&sortBy=voteCount. 
+1. The first step is to download the data from https://www.kaggle.com/datasets/cdc/behavioral-risk-factor-surveillance-system?datasetId=2192&sortBy=voteCount. 
 
 If you want the best model possible, you can upload the data as is. If you are short on time (< 8 hours), you will need to take a sample of the data to upload to Azure ML. I took a sample of 150,000 of the ~ 450,000 rows. The computation time with this amount of data and the provied CPU still took around 7 hours. 
 
