@@ -84,15 +84,21 @@ My AutoML settings define the regression problem with the target of GENHLTH. I i
 
 ### Results
 
-*TODO* Remember to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
 The best model had a normalized root mean squared error of about .101, which used Stack Ensemble. This algorithm uses the output of many other algorithms in it's calculation. The main way I could improve this model is to use all of the data, instead of just taking a sample. I would need my own Azure account to do this because it would take so long. More information on the creation of the AutoML can be found above, but it is important to note that I chose normalized root mean squared error as my primary metric. Changing this to another metric could yield different results and possibly a different model. 
+
 
 This is the output of RunDetails() for the AutoML training. As you can see, the model's scores tended to stay around .100 no matter which algorithm was used. 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Automl_run_details.png?raw=true)
 
+
+
 This shows the best run id as well as many other metrics of the run. Another interesting metric to look at here is R-Squared, which is about .5. This represents a low to moderate correlation, which is good considering the data given. 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/AutoML_best_run.png?raw=true)
+
+
+
+The best run had a normalized root mean squared error of .10003, sampling of 100%, and used the algorith StackEnsemble. This also shows that this run was deployed. 
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/AutoML_best_run_parameters.png?raw=true)
 
 
 
@@ -108,9 +114,21 @@ I also set options for the activation function to be used in the hidden layer. T
 
 
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
 
-*TODO* Remember to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+The Hyperdrive model performed almost as well as the AutoML. The best run had a normalized root mean squared error of .1145. The hyperparameters that I chose to tune, the maximum iterations and the activation function, are also shown here along with their final values. This model would have also benefitted from having all of the data to use for training. I could have also chosen to expand the number of hyperparameters to tune past the two that I used. 
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Hyperdrive_best_run_metrics_and_hyperparameters.png?raw=true)
+
+
+
+Here is the RunDetails widget, which shows some of the runs and their metrics as the model Experiment was running. 
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Hyperdrive_run_details.png?raw=true)
+
+
+
+Here is a graph of all of the Hyperdrive runs. They range from a normalized root mean squared error from .11 to .15. 
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Hyperdrive_graph.png?raw=true)
+
+
 
 ## Model Deployment
 
