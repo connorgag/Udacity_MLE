@@ -126,7 +126,7 @@ Here is the RunDetails widget, which shows some of the runs and their metrics as
 
 
 Here is a graph of all of the Hyperdrive runs. They range from a normalized root mean squared error from .11 to .15. 
-![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Hyperdrive_graph.png?raw=true)
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Hyperdrive_run_graph.png?raw=true)
 
 
 
