@@ -87,7 +87,7 @@ My AutoML settings define the regression problem with the target of GENHLTH. I i
 The best model had a normalized root mean squared error of about .101, which used Stack Ensemble. This algorithm uses the output of many other algorithms in it's calculation. The main way I could improve this model is to use all of the data, instead of just taking a sample. I would need my own Azure account to do this because it would take so long. More information on the creation of the AutoML can be found above, but it is important to note that I chose normalized root mean squared error as my primary metric. Changing this to another metric could yield different results and possibly a different model. 
 
 
-This is the output of RunDetails() for the AutoML training. As you can see, the model's scores tended to stay around .100 no matter which algorithm was used. 
+This is the output of RunDetails() for the AutoML training. As you can see, the model's scores tended to stay around .11 no matter which algorithm was used. 
 ![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/Automl_run_details.png?raw=true)
 
 
