@@ -157,6 +157,10 @@ except urllib.error.HTTPError as error:
 
 This is a brief overview, for more detail into how to query the endpoint, go to automl.ipynb towards the end of the file. 
 
+This screenshot show the active and healthy endpoint, created using the best run from the AutoML model.
+![alt text](https://github.com/connorgag/Udacity_MLE/blob/main/Project_Three/Screenshots/AutoML_healthy_endpoint.png?raw=true)
+
+
 
 ## Screen Recording
 
