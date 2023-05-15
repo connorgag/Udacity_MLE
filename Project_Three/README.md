@@ -164,4 +164,4 @@ This screenshot show the active and healthy endpoint, created using the best run
 
 ## Screen Recording
 
-https://youtu.be/CUV1OO85_BU
+https://youtu.be/TfQAgrrbdRI
