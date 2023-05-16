@@ -165,3 +165,13 @@ This screenshot show the active and healthy endpoint, created using the best run
 ## Screen Recording
 
 https://youtu.be/TfQAgrrbdRI
+
+## Future Work
+
+Both the AutoML and Hyperdrive models gave good results, but there is always room to improve. For example, in the future I could: 
+
+- Add more individuals to the data. The data that I added was just a sample of the complete dataset because the models were taking so long to train. If given a virtual machine that lasts longer than 8 hours, my first step toward improving the model would be to upload the complete dataset. 
+- Not only could we add rows to the dataset, but we could also add more columns. Adding more features to the dataset, or finding datasets with more in-depth information, would improve the accuracy of the model. 
+- The problem I was solving for was a regression problem. We wanted the model to predict the person's general health on a score from 1 to 5. I could change this to be a multi-class classification problem, or group the categories to make it binary classification. I would, however, need more domain knowledge to proceed with this step. 
+- The Hyperdrive model could be improved by adding different hyperparameters or changing their ranges. You could even go into train.py and change the algorithm entirely based on what performed well in the AutoML model. 
+- In both the AutoML and Hyperdrive models, I used normalized root mean squared error as the primary metric. Changing this to something else, such as R Squared, could yield better results for the models. 
